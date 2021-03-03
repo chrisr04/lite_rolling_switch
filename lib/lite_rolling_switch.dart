@@ -172,7 +172,7 @@ class _RollingSwitchState extends State<LiteRollingSwitch>
                           child: Icon(
                             widget.iconOff,
                             size: 25,
-                            color: (iconColor != null)? widget.iconColor : transitionColor,
+                            color: (widget.iconColor != null)? widget.iconColor : transitionColor,
                           ),
                         ),
                       ),
