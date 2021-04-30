@@ -197,6 +197,7 @@ class _RollingSwitchState extends State<LiteRollingSwitch>
 
   _action() {
     _determine(changeState: true);
+    widget.onChanged(turnState);
   }
 
   _determine({bool changeState = false}) {
@@ -205,8 +206,6 @@ class _RollingSwitchState extends State<LiteRollingSwitch>
       (turnState)
           ? animationController.forward()
           : animationController.reverse();
-
-      widget.onChanged(turnState);
     });
   }
 }
