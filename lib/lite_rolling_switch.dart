@@ -90,7 +90,7 @@ class _RollingSwitchState extends State<LiteRollingSwitch>
       });
     });
     turnState = widget.value;
-    // _determine();
+    _determine();
   }
 
   @override
